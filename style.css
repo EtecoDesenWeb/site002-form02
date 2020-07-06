@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+
+/* --- main vars --- */
+:root {
+    --main-font: "Spartan";
+}
+
+
+/* --- main tags --- */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    user-select:none;
+}
+
+h5, h1 {
+    font-family: "Spartan";
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+body {
+    background-color: #2d4c61;
+}
+
+.input-login::placeholder {
+    color: #bababa;
+}
+
+.config-2::placeholder {
+    color: #eaeaea;
+}
+
+
+/* --- main classes --- */
+.container-bg {
+    background: url('img/background.png') no-repeat bottom right;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: auto;
+    padding: 100px 50px;
+}
+
+.formRectangle {
+    width: auto;
+    height: 372px;
+    border-radius: 20px;
+}
+
+.formText {
+    background-color: rgba(0, 0, 0, 0.22);
+    width: 40%;
+    min-height: 372px;
+    max-height: 372px;
+    float: left;
+    display: block;
+    border-radius: 20px 0 0 20px;
+    backdrop-filter: blur(30px);
+    padding: 50px;
+    /*text-align: justify;*/
+}
+
+.formLogin {
+    background-color: rgba(255, 255, 255, 0.12);
+    width: 60%;
+    min-height: 372px;
+    max-height: 372px;
+    float: right;
+    display: block;
+    border-radius: 0 20px 20px 0;
+    padding: 50px;
+    backdrop-filter: blur(30px);
+}
+
+
+
+/* form bootstrap */
+.icon-div {
+    margin: 6px 10px 4px 10px;
+    position: absolute;
+    color: white;
+}
+
+.input-login {
+    border-radius: 0;
+    background-color: transparent!important;
+    color: white;
+    border: 0;
+    border-bottom: 2px solid #868686;
+    padding: 5px 5px 5px 36px;
+    transition: 0.1s ease-in-out;
+}
+
+.config-2 {
+    border-bottom: 2px solid #adadad;
+}
+
+/* form bootstrap FOCUS and HOVER */
+.input-login:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    animation: glow 1s infinite alternate;
+}
+
+.input-login:hover {
+    border-bottom: 2px solid white;
+}
+
+/* form bootstrap GLOW ANIMATION */
+@keyframes glow {
+    from {
+        border-bottom: 2px solid white;
+    }
+    to {
+        border-bottom: 2px solid #868686;
+    }
+
+}
+
+@keyframes glow2 {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: #adadad;
+    }
+
+}
+
+/* form bootstrap btn */
+.btn-login {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.77);
+    color: black;
+    border: none;
+}
+
+.btn-login:hover {
+    color: black;
+    animation: glow2 1s infinite alternate;
+}
+
+.btn-login:active {
+    border: none;
+    box-shadow: none;
+
+}
